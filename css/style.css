@@ -169,7 +169,20 @@ a {
 
 .user-office {
     padding-left: 7px;
+    transition: color .3s ease;
 }
+
+    /* .user-office-link:focus path {
+    fill: #CC9933;
+}
+.user-office:hover path {
+    fill: #E9C479;
+}
+
+.user-office:active path {
+    fill: #A47312;
+} */
+
 
 .user-office-link {
     margin: 0;
@@ -181,20 +194,32 @@ a {
     transition: color .3s ease;
 }
 
-.user-office-link:focus {
-    color:  #CC9933;
+.user-office-link:focus path {
+    fill: #CC9933;
+}
+.user-office-link:hover path {
+    fill: #E9C479;
 }
 
-.user-office-link:hover {
-    color: #E9C479;;
+.user-office-link:active path {
+    fill: #A47312;
 }
 
-.user-office-link:active {
-    color: #A47312;
+.user-office:focus {
+    color: #CC9933
+}
+
+.user-office:hover {
+    color: #E9C479
+}
+
+.user-office:active {
+    color: #A47312
 }
 
 .user-office-link-img {
     align-self:center;
+    color: var(--color);
     transition-property: fill;
     transition-duration: .3s;
     transition-timing-function: ease;
