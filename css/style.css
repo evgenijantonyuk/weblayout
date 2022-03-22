@@ -167,9 +167,12 @@ a {
     color:  #A47312;;
 }
 
+.user-office {
+    padding-left: 7px;
+}
+
 .user-office-link {
     margin: 0;
-    padding-left: 7px;
     font-size: 16px;
     line-height: 16px;
     align-self: center;
@@ -191,13 +194,11 @@ a {
 }
 
 .user-office-link-img {
-    display: flex;
     align-self:center;
     transition-property: fill;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
-
 
 .user-office-link-img:focus path {
     fill: #CC9933;
@@ -390,47 +391,93 @@ a {
     min-height: 258px;
 }
 
-.special-offers-details {
-    width: 102px;
-    height: 16px;
-    transition: color .3s ease;
-}
-
-.special-yellow-rectangle-img{
-    transition: color .3s ease;
-}
-
-
-/* .special-offers-details:focus
-.special-yellow-rectangle-img {
-    color: #CC9933;
-} */
-
-.special-offers-details:hover {
-    color: #E9C479;
-;
-}
-
-.special-offers-details:active {
-    color: #FFFFFF;
-}
-
-.special-offers-details-more-img {
+/* techer help me */
+.offers__link {
+    color: #ffcc66;
+    text-decoration: none;
+    transition-property: color;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
     margin: 0;
     padding-left: 40px;
     padding-top: 47px;
     color: var(--color);
     /* color: #CC9933; */
+    align-items: center;
+    transition-property: color, stroke;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.offers__link:hover{
+    color: #FFFFFF;
+}
+
+.offers__link path {
+    transition: transform .3s ease-in-out;
+}
+
+.offers__link-icon {
+    color: #CC9933;
+}
+
+.offers__link:before{
+    content: '';
+    position: absolute;
+    width: 573px;
+    height: 258px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity, outline, outline-offset;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.offers__third-link:before {
+    height: 540px;  
+}
+
+.offers__link:focus:before{
+    outline: 1px solid #cc9933;
+    outline-offset: 8px;
+    opacity: 1;
+}
+
+.offers__link:focus {
+    outline: none;
+}
+
+.offers__link:hover path {
+    transform: translateX(12px);
+    stroke: #FFFFFF;
+}
+
+.offers__link:active {
+    color: white;
+}
+
+/* .special-offers-details:hover {
+    color: #E9C479;
+}
+
+.special-offers-details:active {
+    color: #FFFFFF;
+} */
+
+.special-offers-details-more-img {
+    
 }
 
 
-.special-yellow-rectangle-img {
+/* .special-yellow-rectangle-img {
     width: 11px;  
     height: 11px;
     margin-top: 18px;
     padding-left: 5px;
     align-self: center;
-}
+} */
 
 .special-offers-card-2 {
 }
